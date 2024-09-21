@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Desf from './events/desf'
+import Desc from './events/desc'
+import Descs from './events/descs'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Desf tech='react' media='Linkedin' />
+        <p>The above statement is from function component, to verify the destucturing of props.</p>
+      </div>
+
+      <div>
+        <Desc tech='FullStack' media='Git' />
+        <p>The above statement is from class component, to verify the destucturing of props.</p>
+      </div>
+
+      <div>
+        <Descs />
+      </div>
+
     </div>
   );
 }
